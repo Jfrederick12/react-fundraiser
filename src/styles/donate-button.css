@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.flex-container .col {
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
 .donate-form {
   display: flex;
   justify-content: space-between;
@@ -13,8 +28,8 @@
 .col input {
   display: inline-block;
   width: 100%;
-  padding: 0.87em;
-  font-family: inherit;
+  padding: 0.78em;
+  font-family: 'Futura';
   font-size: inherit;
   font-weight: bold;
   color: #424242;
@@ -27,7 +42,7 @@
   cursor: pointer;
   width: 100%;
   padding: 0.5em;
-  font-family: inherit;
+  font-family: 'Futura';
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
@@ -35,11 +50,58 @@
   color: white;
   background-color: #1CBC2C;
   border: 1px solid #eaeaea;
-
   transition: background 0.3s ease 0s;
 }
 
 .btn:hover {
+  padding: 0.5em;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #2d2d2d;
+  transition: background 0.3s ease 0s;
+}
+
+.btn-yes {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5em;
+  font-family: 'Futura';
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  background-color: #1CBC2C;
+  border: 1px solid #eaeaea;
+  transition: background 0.3s ease 0s;
+}
+
+.btn-yes:hover {
+  padding: 0.5em;
+  color: #fff;
+  font-size: 1.2em;
+  background-color: #2d2d2d;
+  transition: background 0.3s ease 0s;
+}
+
+.btn-no {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  padding: 0.5em;
+  font-family: 'Futura';
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  color: white;
+  background-color: salmon;
+  border: 1px solid #eaeaea;
+  transition: background 0.3s ease 0s;
+}
+
+.btn-no:hover {
   padding: 0.5em;
   color: #fff;
   font-size: 1.2em;

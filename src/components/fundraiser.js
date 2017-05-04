@@ -8,7 +8,8 @@ class Fundraiser extends Component {
     super();
     this.state = {
       fundraisers: Data,
-      amountRaised: 0
+      amountRaised: 0,
+      agree: true
     }
     this.onPledgeSubmit = this.onPledgeSubmit.bind(this);
   }
@@ -18,13 +19,22 @@ class Fundraiser extends Component {
   		amountRaised: (this.state.amountRaised + amount)
   	})
   }
-
   render() {
+
+	  let amount = Math.round((this.state.amountRaised / 1200) * 100)
+	  
+	  const divStyle = {
+	  	width: `${amount}%`
+	  }
+
     return (
       <div className="App">
         {this.state.fundraisers.map((fund) => {
           return (
             <div className="fund-container" key={fund.id}>
+              <div className="progress-bar">
+					      <div className="bar" style={divStyle}></div>
+					    </div>
               <p>{fund.name}</p>
               <p>{fund.goal}</p>
               <p>{fund.doners.length}</p>

@@ -3,3 +3,17 @@
 	width: 50%;
 	border: 1px solid gray;
 }
+
+.progress-bar {
+  height: 1em;
+  border: 1px solid #eaeaea;
+  border-bottom: 0;
+}
+
+.bar {
+  height: 1em;
+  background-color: #EF5F3C;
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.25);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.25);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.25);
+}
