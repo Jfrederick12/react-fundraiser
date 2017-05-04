@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Data from '../data/fundraisers.json';
+import DonateButton from './donate-button';
 import '../styles/fundraiser.css';
 
 class Fundraiser extends Component {
@@ -14,9 +15,8 @@ class Fundraiser extends Component {
 
   onPledgeSubmit(amount) {
   	this.setState({
-  		amountRaised: (this.state.amountRaised += 30)
+  		amountRaised: ( this.state.amountRaised += amount)
   	})
-  	console.log(this.state.amountRaised)
   }
 
   render() {
@@ -29,10 +29,10 @@ class Fundraiser extends Component {
               <p>{fund.goal}</p>
               <p>{fund.doners.length}</p>
               <p>{`$${this.state.amountRaised} of $${fund.goal} raised.`} </p>
+			        < DonateButton onPledgeSubmit={this.onPledgeSubmit} fund={fund} />
             </div>
           )
         })}
-        <button onClick={this.onPledgeSubmit}>Give It!</button>
       </div>
     );
   }
