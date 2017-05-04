@@ -6,7 +6,7 @@ class DonateButton extends Component {
 		super(props);
 
 		this.state = {
-			value: 0
+			value: ''
 		}
 		this.onPledgeSubmit = this.onPledgeSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -26,15 +26,20 @@ class DonateButton extends Component {
 
   handleSubmit(event) {
   	event.preventDefault()
+  	this.setState({value: ''})
   }
 
 	render() {
 		console.log(this.state.value)
 		return(
-				<form onSubmit={this.handleSubmit}>
+			<form className="donate-form" onSubmit={this.handleSubmit}>
+				<div className="col">
 					<input type="number" value={this.state.value} onChange={this.handleChange}/>
-					<button onClick={this.onPledgeSubmit}>Donate</button>
-				</form>
+				</div>
+				<div className="col">
+					<button className="btn" onClick={this.onPledgeSubmit}>Donate</button>
+				</div>
+			</form>
 		)
 	}
 }

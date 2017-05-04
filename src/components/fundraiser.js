@@ -15,7 +15,7 @@ class Fundraiser extends Component {
 
   onPledgeSubmit(amount) {
   	this.setState({
-  		amountRaised: ( this.state.amountRaised += amount)
+  		amountRaised: (this.state.amountRaised + amount)
   	})
   }
 
@@ -24,7 +24,7 @@ class Fundraiser extends Component {
       <div className="App">
         {this.state.fundraisers.map((fund) => {
           return (
-            <div key={fund.id}>
+            <div className="fund-container" key={fund.id}>
               <p>{fund.name}</p>
               <p>{fund.goal}</p>
               <p>{fund.doners.length}</p>
