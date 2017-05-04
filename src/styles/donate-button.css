@@ -72,7 +72,7 @@
   text-align: center;
   line-height: 1.5;
   color: white;
-  background-color: #1CBC2C;
+  background-color: #ff4949;
   border: 1px solid #eaeaea;
   transition: background 0.3s ease 0s;
 }
@@ -96,7 +96,7 @@
   text-align: center;
   line-height: 1.5;
   color: white;
-  background-color: salmon;
+  background-color: #ff4949;
   border: 1px solid #eaeaea;
   transition: background 0.3s ease 0s;
 }

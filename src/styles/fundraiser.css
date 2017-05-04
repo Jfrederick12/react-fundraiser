@@ -1,5 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+html {
+	background-color: #f9f9f9;
+}
 .fund-container {
 	margin-left: 25%;
 	width: 50%;
-	border: 1px solid gray;
+	background-color: white;
+  font-family: 'Futura';
+}
+
+.bubble {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Futura';
+  text-align: center;
+  color: #fff;
+  background-color: #424242;
+  border-radius: 3px;
+}
+
+.bubble strong {
+	color: #ff4949;
+}
+
+.bubble:after {
+  position: absolute;
+  bottom: -0.4em;
+  right: 5em;
+  border-top: 0.8em solid #424242;
+  border-right: 0.8em solid transparent;
+  border-left: 0.8em solid transparent;
+  content: "";
 }

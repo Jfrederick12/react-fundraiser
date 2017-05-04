@@ -3,8 +3,8 @@ import '../styles/donate-button.css';
 import {Alert} from 'react-bootstrap';
 
 class DonateButton extends Component {
-	constructor(props) {
-		super(props);
+	constructor() {
+		super();
 
 		this.state = {
 			value: '',
@@ -59,7 +59,7 @@ class DonateButton extends Component {
 		return(
 			<form className="donate-form" onSubmit={this.handleSubmit}>
 				<div className="col">
-					<input type="number" value={this.state.value} onChange={this.handleChange}/>
+					<input type="number" value={this.state.value} onChange={this.handleChange} placeholder="$ Amount"/>
 				</div>
 				<div className="col">
 					<button className="btn" onClick={this.handleAlertShow.bind(this)}>Donate</button>

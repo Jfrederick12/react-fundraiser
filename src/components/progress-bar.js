@@ -2,11 +2,7 @@ import React, {Component} from 'react';
 import '../styles/progress-bar.css';
 
 class ProgressBar extends Component {
-	constructor(props) {
-		super(props);
-	}
-
-	render() {
+  render() {
   	const divStyle = { width: `${this.props.amount}%` }
   	const maxStyle = { width: '100%'}
 		return(

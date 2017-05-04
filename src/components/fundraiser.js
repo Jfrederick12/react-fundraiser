@@ -20,6 +20,8 @@ class Fundraiser extends Component {
   		amountRaised: (this.state.amountRaised + amount)
   	})
   }
+
+
   render() {
     return (
       <div className="App">
@@ -28,7 +30,16 @@ class Fundraiser extends Component {
 				  	let amount = Math.round((this.state.amountRaised / fund.goal) * 100)
           		return(
 		            <div className="fund-container" key={fund.id}>
-		              < ProgressBar amount={amount}/>
+            	    <div className="bubble">
+							      <span>
+							      	{ amount < 100 ?
+											    `$${fund.goal - this.state.amountRaised} still needed for the fund`
+										    :
+										      `Congrats! the fund has raised $${this.state.amountRaised}` 
+							      	}
+							   </span>
+							    </div>
+		              <div>< ProgressBar amount={amount}/></div>
 		              <p>{fund.name}</p>
 		              <p>{fund.goal}</p>
 		              <p>{fund.doners.length}</p>
