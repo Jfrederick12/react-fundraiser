@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Data from '../data/fundraisers.json';
 import Fund from './fund';
-import FundraiserCard from './fundraiser-card';
+import Header from './header';
 import { Grid, Row, Col } from 'react-bootstrap';
 import '../styles/fundraiser.css';
 
@@ -22,6 +22,7 @@ class Fundraiser extends Component {
   render() {
     return (
       <div className="App">
+				< Header />
 	      <Grid>
 	      	<Row className="row">
 		        {this.state.fundraisers.map((fund) => {
