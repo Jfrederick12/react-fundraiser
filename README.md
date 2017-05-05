@@ -1,1 +1,2 @@
-## ReactJS project focused on a mock fundraising app
+## ReactJS Mock Fundraising App
+More details to follow...
