@@ -8,7 +8,8 @@ class DonateButton extends Component {
 
 		this.state = {
 			value: '',
-			alertVisible: false
+			alertVisible: false,
+			showModal: false
 		}
 		this.onPledgeSubmit = this.onPledgeSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -40,6 +41,14 @@ class DonateButton extends Component {
   	this.setState({value: ''})
   }
 
+  close() {
+    this.setState({ showModal: false });
+  }
+
+  open() {
+    this.setState({ showModal: true });
+  }  
+
 	render() {
 		if (this.state.alertVisible) {
 			return(
@@ -58,12 +67,11 @@ class DonateButton extends Component {
 		}
 		return(
 			<form className="donate-form" onSubmit={this.handleSubmit}>
-				<div className="col">
+
 					<input type="number" value={this.state.value} onChange={this.handleChange} placeholder="$ Amount"/>
-				</div>
-				<div className="col">
+		
 					<button className="btn" onClick={this.handleAlertShow.bind(this)}>Donate</button>
-				</div>
+		
 			</form>
 		)
 	}

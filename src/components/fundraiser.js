@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Data from '../data/fundraisers.json';
 import Fund from './fund';
 import FundraiserCard from './fundraiser-card';
+import { Grid, Row, Col } from 'react-bootstrap';
 import '../styles/fundraiser.css';
 
 class Fundraiser extends Component {
@@ -21,22 +22,20 @@ class Fundraiser extends Component {
   render() {
     return (
       <div className="App">
-      	<div className="flex-grid">
-	        {this.state.fundraisers.map((fund) => {
-	        	return (
-			        <div className="col" key={fund.id}>
-		        		< Fund fund={fund} />
-		        	</div>
-	        	)
-	        })}
-        </div>
+	      <Grid>
+	      	<Row>
+		        {this.state.fundraisers.map((fund) => {
+		        	return (
+				        <Col md={2} md={4} key={fund.id}>
+			        		< Fund fund={fund} />
+			        	</Col>
+		        	)
+		        })}
+	        </Row>
+	      </Grid>
       </div>
     );
   }
 }
 
 export default Fundraiser;
-
-        		// <div key={fund.id}>
-	        	// 	< Fund fund={fund} />
-	        	// </div>

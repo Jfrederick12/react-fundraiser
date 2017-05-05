@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 html {
-	background-color: #f9f9f9;
+	/*background-color: #f9f9f9;*/
+}
+
+.App {
+  height: 100vh;
+  background-color: #efefef;
 }
 
 .flex-grid {
@@ -14,7 +19,6 @@ html {
   width: 70%;
 }
 
-
 @media (max-width: 400px) {
   .flex-grid {
     display: block;
@@ -27,10 +31,12 @@ html {
 
 
 .fund-container {
-	/*margin-left: 25%;*/
-	/*width: 50%;*/
 	background-color: white;
   font-family: 'Futura';
+}
+
+.fund-container h1{
+  padding: 10px;
 }
 
 .fund-container em {

@@ -6,13 +6,15 @@ class ProgressBar extends Component {
   	const divStyle = { width: `${this.props.amount}%` }
   	const maxStyle = { width: '100%'}
 		return(
-      <div className="progress-bar">
-        {
-        	this.props.amount < 100 ?
-        		<div className='bar' style={divStyle}></div>
-        	:
-        		<div className='bar' style={maxStyle}></div>
-        }
+			<div className="progress-container">
+	      <div className="progress-bar">
+	        {
+	        	this.props.amount < 100 ?
+	        		<div className='bar' style={divStyle}></div>
+	        	:
+	        		<div className='bar' style={maxStyle}></div>
+	        }
+		    </div>
 	    </div>
 		)
 	}

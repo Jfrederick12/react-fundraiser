@@ -16,7 +16,6 @@ class FundraiserCard extends Component {
 		return(
 			<div>
 			  <p>{this.props.fund.goal}</p>
-
 			</div>
 		)
 	}
