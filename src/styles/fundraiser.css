@@ -2,9 +2,33 @@
 html {
 	background-color: #f9f9f9;
 }
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid .col {
+  padding: 20px;
+  height: 100px;
+  width: 70%;
+}
+
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
 .fund-container {
-	margin-left: 25%;
-	width: 50%;
+	/*margin-left: 25%;*/
+	/*width: 50%;*/
 	background-color: white;
   font-family: 'Futura';
 }

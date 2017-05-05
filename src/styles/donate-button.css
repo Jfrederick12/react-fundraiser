@@ -13,10 +13,7 @@
 	margin: 20px 10px 20px 10px;
 }
 .donate-form {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin-left: 15%;
+
 }
 
 .donate-form .col {
@@ -26,7 +23,6 @@
 
 .col input {
   display: inline-block;
-  width: 100%;
   padding: 0.78em;
   font-family: 'Futura';
   font-size: inherit;
