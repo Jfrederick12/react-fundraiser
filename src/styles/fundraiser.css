@@ -9,6 +9,14 @@ html {
   font-family: 'Futura';
 }
 
+.fund-container em {
+	color: #ff4949;
+}
+
+.fund-container span {
+	padding-left: 10px;
+}
+
 .bubble {
   position: relative;
   padding: 10px;
@@ -32,4 +40,14 @@ html {
   border-right: 0.8em solid transparent;
   border-left: 0.8em solid transparent;
   content: "";
+}
+
+.description {
+	border-top: 1px solid gray;
+	margin: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	font-family: 'Helvetica';
+	font-size: 14px;
 }

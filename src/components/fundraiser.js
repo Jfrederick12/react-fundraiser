@@ -37,14 +37,14 @@ class Fundraiser extends Component {
 										    :
 										      `Congrats! the fund has raised $${this.state.amountRaised}` 
 							      	}
-							   </span>
+								    </span>
 							    </div>
 		              <div>< ProgressBar amount={amount}/></div>
-		              <p>{fund.name}</p>
-		              <p>{fund.goal}</p>
-		              <p>{fund.doners.length}</p>
-		              <p>{`$${this.state.amountRaised} of $${fund.goal} raised.`} </p>
+		              <h1>{fund.name}</h1>
 					        < DonateButton onPledgeSubmit={this.onPledgeSubmit} fund={fund} />
+		              <span><em>${this.state.amountRaised}</em> of ${fund.goal} raised.</span>
+		              <span>{`${fund.doners.length} backers`}</span>
+					        <p className="description">{fund.description}</p>
 		            </div>
           		)
 	          
@@ -56,38 +56,3 @@ class Fundraiser extends Component {
 }
 
 export default Fundraiser;
-// const divStyle = { width: '100%'}
-
-       //    {
-				  	// let amount = Math.round((this.state.amountRaised / fund.goal) * 100)
-       //    	if (amount > 100) {
-       //    		const divStyle = { width: '100%'}
-       //    		return(
-		     //        <div className="fund-container" key={fund.id}>
-		     //          < ProgressBar />
-		     //          <p>{fund.name}</p>
-		     //          <p>{fund.goal}</p>
-		     //          <p>{fund.doners.length}</p>
-		     //          <p>{`$${this.state.amountRaised} of $${fund.goal} raised.`} </p>
-					  //       < DonateButton onPledgeSubmit={this.onPledgeSubmit} fund={fund} />
-		     //        </div>
-       //    		)
-	      //     } else {
-	      //     	let amount = Math.round((this.state.amountRaised / fund.goal) * 100)
-	      //     	const divStyle = { width: `${amount}%` }
-	      //     	return (
-		     //        <div className="fund-container" key={fund.id}>
-		     //          <div className="progress-bar">
-							//       <div className="bar" style={divStyle}></div>
-							//     </div>
-		     //          <p>{fund.name}</p>
-		     //          <p>{fund.goal}</p>
-		     //          <p>{fund.doners.length}</p>
-		     //          <p>{`$${this.state.amountRaised} of $${fund.goal} raised.`} </p>
-					  //       < DonateButton onPledgeSubmit={this.onPledgeSubmit} fund={fund} />
-		     //        </div>
-	      //     	)
-	      //     }
-	      //   } 
-
-

@@ -10,8 +10,7 @@
 
 .flex-container .col {
 	width: 100%;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin: 20px 10px 20px 10px;
 }
 .donate-form {
   display: flex;
@@ -55,9 +54,9 @@
 
 .btn:hover {
   padding: 0.5em;
-  color: #fff;
+  color: #686868;
   font-size: 1.2em;
-  background-color: #2d2d2d;
+  background-color: #efefef;
   transition: background 0.3s ease 0s;
 }
 
@@ -79,9 +78,9 @@
 
 .btn-yes:hover {
   padding: 0.5em;
-  color: #fff;
+  color: #ff4949;
   font-size: 1.2em;
-  background-color: #2d2d2d;
+  background-color: #efefef;
   transition: background 0.3s ease 0s;
 }
 
@@ -103,9 +102,9 @@
 
 .btn-no:hover {
   padding: 0.5em;
-  color: #fff;
+  color: #ff4949;
   font-size: 1.2em;
-  background-color: #2d2d2d;
+  background-color: #efefef;
   transition: background 0.3s ease 0s;
 }
 
