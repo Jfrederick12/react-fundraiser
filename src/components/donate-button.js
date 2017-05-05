@@ -8,7 +8,8 @@ class DonateButton extends Component {
 
 		this.state = {
 			value: '',
-			alertVisible: false
+			alertVisible: false,
+			error: ''
 		}
 		this.onPledgeSubmit = this.onPledgeSubmit.bind(this);
 		this.handleChange = this.handleChange.bind(this);
@@ -24,7 +25,11 @@ class DonateButton extends Component {
   }	
 
   handleAlertShow() {
-    this.setState({alertVisible: true});
+  	if (this.state.value === '') {
+  		this.setState({alertVisible: false, error: 'must enter an amount'})
+  	} else {
+	    this.setState({alertVisible: true, error: ''});
+	  }
   }
 
   handleAlertDismiss() {
@@ -43,8 +48,8 @@ class DonateButton extends Component {
 	render() {
 		if (this.state.alertVisible) {
 			return(
-				<Alert>
-					<p>{`are you sure you want to donate $${this.state.value}?`}</p>
+				<Alert className="alert">
+					<p>{`Is this the amount you wish to donate $${this.state.value}?`}</p>
 					<div className="flex-container">
 						<div className="col">
 							<button className="btn-yes" onClick={this.onPledgeSubmit}>Yes</button>
@@ -58,12 +63,11 @@ class DonateButton extends Component {
 		}
 		return(
 			<form className="donate-form" onSubmit={this.handleSubmit}>
-				<div className="col">
+					<p>{this.state.error}</p>
 					<input type="number" value={this.state.value} onChange={this.handleChange} placeholder="$ Amount"/>
-				</div>
-				<div className="col">
+		
 					<button className="btn" onClick={this.handleAlertShow.bind(this)}>Donate</button>
-				</div>
+		
 			</form>
 		)
 	}

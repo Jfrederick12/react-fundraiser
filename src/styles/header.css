@@ -1,0 +1,50 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+.header {
+	background-color: #424242;
+  height: 275px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+	text-align: left;
+	color: #efefef;
+	font-style: 'Futura';
+}
+
+.header p {
+	width: 300px;
+	text-align: left;
+	color: #efefef;
+}
+
+.social-icon {
+	text-align: left;
+}
+
+.social-icon nav {
+	text-align: left;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.social-icon a:visited {
+	color: #ff4949;
+}
+
+.social-icon a {
+		font-family: 'Quicksand', sans-serif;
+		font-size: 14px;
+		padding-right: 20px;
+    color: #ff4949;
+    text-decoration: none;
+		transition: color 0.5s ease;
+}
+
+
+.social-icon a:hover {
+    color: #efefef;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}

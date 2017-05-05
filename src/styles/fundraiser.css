@@ -1,12 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-html {
-	background-color: #f9f9f9;
+
+.row {
+  background-color: #efefef;
 }
+
+.App {
+  /*height: 100vh;*/
+  background-color: #efefef;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-grid .col {
+  padding: 20px;
+  height: 100px;
+  width: 70%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
 .fund-container {
-	margin-left: 25%;
-	width: 50%;
 	background-color: white;
   font-family: 'Futura';
+}
+
+.fund-container h1{
+  padding: 10px;
 }
 
 .fund-container em {

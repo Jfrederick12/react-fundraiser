@@ -12,21 +12,16 @@
 	width: 100%;
 	margin: 20px 10px 20px 10px;
 }
-.donate-form {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin-left: 15%;
-}
 
 .donate-form .col {
 	margin: 20px 30px 20px 30px;
   width: 100%;
 }
 
-.col input {
+.donate-form input {
   display: inline-block;
-  width: 100%;
+  width: 90%;
+  margin-bottom: 20px;
   padding: 0.78em;
   font-family: 'Futura';
   font-size: inherit;
@@ -36,10 +31,15 @@
   border: 1px solid gray;
 }
 
+.donate-form p {
+  color: #ff4949;
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
-  width: 100%;
+  width: 90%;
+  margin-bottom: 20px;
   padding: 0.5em;
   font-family: 'Futura';
   font-size: 1.2em;
@@ -80,7 +80,7 @@
   padding: 0.5em;
   color: #ff4949;
   font-size: 1.2em;
-  background-color: #efefef;
+  background-color: white;
   transition: background 0.3s ease 0s;
 }
 
@@ -104,8 +104,16 @@
   padding: 0.5em;
   color: #ff4949;
   font-size: 1.2em;
-  background-color: #efefef;
+  background-color: white;
   transition: background 0.3s ease 0s;
+}
+
+.alert {
+  background-color: #efefef;
+  margin: 10px;
+  padding: 10px;
+  height: 10%;
+  border: none;
 }
 
 /*.btn {
