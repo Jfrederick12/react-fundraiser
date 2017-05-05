@@ -12,7 +12,7 @@ class Header extends Component {
 					</nav>
 				</div>    		
     		<h1>'Fun' Raiser</h1>
-    		<p>The end time are near, maybe. Either way, there are beasts of legend that require your hard earned dollars to rise up once again!</p>
+    		<p>Times can be tough, even for creatures of legend and mythical beasts. Fun Raiser exists to give to those in need.</p>
     	</div>
 		)
 	}

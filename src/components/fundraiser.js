@@ -13,11 +13,11 @@ class Fundraiser extends Component {
     }
   }
 
-  onPledgeSubmit(amount) {
-  	this.setState({
-  		amountRaised: (this.state.amountRaised + amount)
-  	})
-  }  
+  // onPledgeSubmit(amount) {
+  // 	this.setState({
+  // 		amountRaised: (this.state.amountRaised + amount)
+  // 	})
+  // }  
 
   render() {
     return (

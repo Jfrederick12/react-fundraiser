@@ -1,17 +1,18 @@
 [
 	{
 		"id": 0,
-		"name": "Billy's Baby Teeth",
+		"name": "Sasquatch Sammies",
 		"goal": 1200,
+		"amountRaised": 485,
 		"daysLeft": 7,
-		"description": "Billy is turning 26 next month and all of his baby teeth are still in his mouth. There's a simple procedure to fix this, but we need help raising the funds! We will be forever grateful if ya'll help Billy make this final transition into adulthood, tooth by tooth.",
+		"description": "It's no surprise, Big Foot is old and he's losing the hair that once made him so handsome. We're raising money by selling our special line of 'Sasquatch Sammies' sandwiches, to fund experimental surgery so he can get hair plugs. Let's get Big Foot his confidence back.",
 		"ended": false,
 		"pledgeMet": false,
 		"doners": [
 			{
 				"id": 0,
 				"name": "Sharon Patke",
-				"donated": 600
+				"donated": 400
 			},
 			{
 				"id": 1,
@@ -21,53 +22,39 @@
 			{
 				"id": 2,
 				"name": "Samantha Ronson",
-				"donated": 120				
+				"donated": 50				
 			},
 			{
 				"id": 3,
 				"name": "Steve Earle",
 				"donated": 10				
-			},
-			{
-				"id": 4,
-				"name": "John Ryan",
-				"donated": 70				
 			}
 		]
 	},
 	{
 		"id": 1,
-		"name": "Help Little Ashley",
+		"name": "Beware, The Beholder",
 		"goal": 3000,
+		"amountRaised": 950,
 		"daysLeft": 7,
-		"description": "Billy is turning 26 next month and all of his baby teeth are still in his mouth. There's a simple procedure to fix this, but we need help raising the funds! We will be forever grateful if ya'll help Billy make this final transition into adulthood, tooth by tooth.",
+		"description": "He's got a bunch of eyes, and is a bit scary. Beauty is in the eye of the beholder and this guy lost a few of those eyes. These hospital bills aren't cheap wherever he's from. ",
 		"ended": false,
 		"pledgeMet": false,
 		"doners": [
 			{
 				"id": 0,
-				"name": "Sharon Patke",
+				"name": "Aaron",
 				"donated": 600
 			},
 			{
 				"id": 1,
-				"name": "Bill Warren",
-				"donated": 25				
+				"name": "Kiki Ramone",
+				"donated": 150			
 			},
 			{
 				"id": 2,
-				"name": "Samantha Ronson",
-				"donated": 120				
-			},
-			{
-				"id": 3,
-				"name": "Steve Earle",
-				"donated": 10				
-			},
-			{
-				"id": 4,
-				"name": "John Ryan",
-				"donated": 70				
+				"name": "Cassandra Nova",
+				"donated": 200				
 			}
 		]
 	},
@@ -75,6 +62,7 @@
 		"id": 2,
 		"name": "Awaken The Kraken",
 		"goal": 12000,
+		"amountRaised": 1960,
 		"daysLeft": 7,
 		"description": "This sea monster of giant proportions has been sited near Norway. We are lacking the funds to prepare the ancient ritual to summon such a powerful beast. The good news is that, thanks to this wonderful app we can finally release the Kraken!",
 		"ended": false,
@@ -99,6 +87,16 @@
 				"id": 3,
 				"name": "Townes Van Zandt",
 				"donated": 100				
+			},
+			{
+				"id": 4,
+				"name": "Hurricane Hurley",
+				"donated": 20				
+			},
+			{
+				"id": 5,
+				"name": "Green Ranger",
+				"donated": 120			
 			}
 		]
 	}

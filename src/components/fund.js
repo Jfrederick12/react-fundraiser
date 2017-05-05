@@ -8,7 +8,7 @@ class Fund extends Component {
 		super(props);
 
     this.state = {
-      amountRaised: 0,
+      amountRaised: this.props.fund.amountRaised,
       agree: true,
       backers: this.props.fund.doners.length
     }		
@@ -23,6 +23,17 @@ class Fund extends Component {
   }
 
   render() {
+  // 	let donerPrice = []
+  // 	this.props.fund.doners.map((backer) => {
+  // 		donerPrice.push(backer.donated)
+  // 	})
+
+  // 	let sum = donerPrice.reduce(function (a, b) {
+		//   return a + b;
+		// }, 0);
+
+  // 	console.log(this.state.doners)
+  // 	console.log(sum)
 		let amount = Math.round((this.state.amountRaised / this.props.fund.goal) * 100)
 		return(
       <div className="fund-container" key={this.props.fund.id}>
