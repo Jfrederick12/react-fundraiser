@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-html {
-	/*background-color: #f9f9f9;*/
+
+.row {
+  background-color: #efefef;
 }
 
 .App {

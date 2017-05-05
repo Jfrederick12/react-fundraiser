@@ -23,7 +23,7 @@ class Fundraiser extends Component {
     return (
       <div className="App">
 	      <Grid>
-	      	<Row>
+	      	<Row className="row">
 		        {this.state.fundraisers.map((fund) => {
 		        	return (
 				        <Col md={2} md={4} key={fund.id}>

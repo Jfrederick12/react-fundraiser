@@ -31,6 +31,10 @@
   border: 1px solid gray;
 }
 
+.donate-form p {
+  color: #ff4949;
+}
+
 .btn {
   display: inline-block;
   cursor: pointer;
@@ -76,7 +80,7 @@
   padding: 0.5em;
   color: #ff4949;
   font-size: 1.2em;
-  background-color: #efefef;
+  background-color: white;
   transition: background 0.3s ease 0s;
 }
 
@@ -100,8 +104,16 @@
   padding: 0.5em;
   color: #ff4949;
   font-size: 1.2em;
-  background-color: #efefef;
+  background-color: white;
   transition: background 0.3s ease 0s;
+}
+
+.alert {
+  background-color: #efefef;
+  margin: 10px;
+  padding: 10px;
+  height: 10%;
+  border: none;
 }
 
 /*.btn {

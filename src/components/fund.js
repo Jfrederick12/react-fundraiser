@@ -9,14 +9,16 @@ class Fund extends Component {
 
     this.state = {
       amountRaised: 0,
-      agree: true
+      agree: true,
+      backers: this.props.fund.doners.length
     }		
     this.onPledgeSubmit = this.onPledgeSubmit.bind(this);
 	}
 
   onPledgeSubmit(amount) {
   	this.setState({
-  		amountRaised: (this.state.amountRaised + amount)
+  		amountRaised: (this.state.amountRaised + amount),
+  		backers: (this.state.backers + 1)
   	})
   }
 
@@ -37,7 +39,7 @@ class Fund extends Component {
         <h1>{this.props.fund.name}</h1>
         < DonateButton onPledgeSubmit={this.onPledgeSubmit} fund={this.props.fund} />
         <span><em>${this.state.amountRaised}</em> of ${this.props.fund.goal} raised.</span>
-        <span>{`${this.props.fund.doners.length} backers`}</span>
+        <span>{`${this.state.backers} backers`}</span>
         <p className="description">{this.props.fund.description}</p>
       </div>
 		)          	
