@@ -12,7 +12,7 @@ class Header extends Component {
 					</nav>
 				</div>    		
     		<h1>'Fun' Raiser</h1>
-    		<p>Times can be tough, even for creatures of legend and mythical beasts. Fun Raiser exists to give to those in need.</p>
+    		<p>Times can be tough, this mock fundraiser app is there to help others in times of need.</p>
     	</div>
 		)
 	}
