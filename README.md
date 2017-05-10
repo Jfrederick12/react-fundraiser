@@ -1,5 +1,5 @@
 ### Mock Fundraising App built using ReactJS, NodeJS & Webpack
 
-##Demo
+Demo
 
 https://react-fundraiser.herokuapp.com/
