@@ -37,7 +37,7 @@ html {
 
 .fund-container {
 	background-color: white;
-  font-family: 'Futura';
+  font-family: 'Futura', Arial, sans-serif;
 }
 
 .fund-container h1{
@@ -56,7 +56,7 @@ html {
   position: relative;
   padding: 10px;
   margin-bottom: 10px;
-  font-family: 'Futura';
+  font-family: 'Futura', Arial, sans-serif;
   text-align: center;
   color: #fff;
   background-color: #424242;
